@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "stone-sans-bold";
+  src: url(../../fonts/stone-sans-bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Chlorinar-WyWz";
+  src: url(../../fonts/Chlorinar-WyWz.ttf) format("truetype");
+}
+body {
+  font-family: "stone-sans-bold";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Chlorinar-WyWz";
+  color: green;
+  text-transform: uppercase;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -71,38 +94,6 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-@font-face {
-  font-family: "stone-sans-bold";
-  src: url(../../fonts/stone-sans-bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Chlorinar-WyWz";
-  src: url(../../fonts/Chlorinar-WyWz.ttf) format("truetype");
-}
-body {
-  font-family: "stone-sans-bold";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Chlorinar-WyWz";
-  color: green;
-  text-transform: uppercase;
-}
-
-.extra1 {
-  width: 100px;
-  height: 100px;
-  background: khaki;
-  content: "reeee";
-}
-.extra1::before, .extra1::after {
-  content: "reeee";
 }
 
 /*# sourceMappingURL=style.css.map */

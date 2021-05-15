@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "stone-sans-bold";
+	src: url(../../fonts/stone-sans-bold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "Chlorinar-WyWz";
+	src: url(../../fonts/Chlorinar-WyWz.ttf) format("truetype");
+}
+
+body {
+	font-family: "stone-sans-bold";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Chlorinar-WyWz";
+	color: green;
+	text-transform: uppercase;
+}

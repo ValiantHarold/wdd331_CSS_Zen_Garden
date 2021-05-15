@@ -1,0 +1,88 @@
+@use 'variables' as *;
+
+@use 'atoms'; // assumes file is named _atoms.scss
+@use 'molecules';
+@use 'organisms' as o; // can shorten the name if we like :)
+
+.swatch {
+	width: 100%;
+	height: 100px;
+	border: 1px solid;
+}
+
+.leo {
+	background-color: $turtle-leo;
+}
+
+.rap {
+	background-color: $turtle-rap;
+}
+
+.mic {
+	background-color: $turtle-mic;
+}
+
+.don {
+	background-color: $turtle-don;
+}
+
+.color1 {
+	background-color: $color1;
+}
+
+.color2 {
+	background-color: $color2;
+}
+
+.color3 {
+	background-color: $color3;
+}
+
+.color4 {
+	background-color: $color4;
+}
+
+.color5 {
+	background-color: $color5;
+}
+
+.color6 {
+	background-color: $color6;
+}
+
+.colors {
+	text-align: center;
+
+	> h3 {
+		width: 100%;
+		flex: 1 0 100%;
+	}
+
+	&-turtle {
+		@include atoms.set-flex();
+
+		> h4 {
+			width: 100%;
+			flex: 1 0 100%;
+		}
+
+		> figure {
+			margin: 0;
+			flex: 1 1 25%;
+		}
+	}
+
+	&-green {
+		@include atoms.set-flex();
+
+		> h4 {
+			width: 100%;
+			flex: 1 0 100%;
+		}
+
+		> figure {
+			margin: 0;
+			flex: 1 1 33%;
+		}
+	}
+}

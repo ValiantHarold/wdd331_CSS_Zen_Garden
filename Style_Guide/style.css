@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Chlorinar-WyWz";
+  src: url(../fonts/Chlorinar-WyWz.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Turtle-zOzL";
+  src: url(../fonts/Turtles-zOzL.ttf) format("truetype");
+}
+@font-face {
+  font-family: "stone-sans-bold";
+  src: url(../fonts/stone-sans-bold.ttf) format("truetype");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 200;
+  font-family: "Turtle-zOzL";
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 200;
+  font-family: "Turtle-zOzL";
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 200;
+  font-family: "Turtle-zOzL";
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 200;
+  font-family: "Turtle-zOzL";
+}
+
+p {
+  font-size: 0.8em;
+  line-height: normal;
+  font-weight: 500;
+  font-family: "stone-sans-bold";
+}
+
+main {
+  padding: 1rem;
+  background-color: #282824;
+}
+main * + * {
+  margin: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #f6ffcc;
+}
+
+body {
+  background-color: #f6ffcc;
+}
+
+.swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
+
+.leo {
+  background-color: #0190f8;
+}
+
+.rap {
+  background-color: #f74f01;
+}
+
+.mic {
+  background-color: #f9a801;
+}
+
+.don {
+  background-color: #f948f8;
+}
+
+.color1 {
+  background-color: #6d8700;
+}
+
+.color2 {
+  background-color: #9db300;
+}
+
+.color3 {
+  background-color: #bac600;
+}
+
+.color4 {
+  background-color: #c8d741;
+}
+
+.color5 {
+  background-color: #d8e46b;
+}
+
+.color6 {
+  background-color: #e2f1a0;
+}
+
+.colors {
+  text-align: center;
+}
+.colors > h3 {
+  width: 100%;
+  flex: 1 0 100%;
+}
+.colors-turtle {
+  display: flex;
+  flex-flow: row wrap;
+}
+.colors-turtle > h4 {
+  width: 100%;
+  flex: 1 0 100%;
+}
+.colors-turtle > figure {
+  margin: 0;
+  flex: 1 1 25%;
+}
+.colors-green {
+  display: flex;
+  flex-flow: row wrap;
+}
+.colors-green > h4 {
+  width: 100%;
+  flex: 1 0 100%;
+}
+.colors-green > figure {
+  margin: 0;
+  flex: 1 1 33%;
+}
+
+/*# sourceMappingURL=style.css.map */
