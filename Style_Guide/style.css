@@ -56,7 +56,7 @@ p {
 
 main {
   padding: 1rem;
-  background-color: #282824;
+  background-color: #6d8700;
 }
 main * + * {
   margin: 1rem;
@@ -64,11 +64,11 @@ main * + * {
 
 section {
   padding: 1rem;
-  background-color: #f6ffcc;
+  background-color: #d8e46b;
 }
 
 body {
-  background-color: #f6ffcc;
+  background-color: #e2f1a0;
 }
 
 .swatch {

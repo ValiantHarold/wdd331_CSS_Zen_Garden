@@ -28,7 +28,7 @@
 
 main {
 	padding: 1rem;
-	background-color: $background-dark;
+	background-color: $color1;
 
 	* + * {
 		margin: 1rem;
@@ -37,5 +37,5 @@ main {
 
 section {
 	padding: 1rem;
-	background-color: $background-light;
+	background-color: $color5;
 }
