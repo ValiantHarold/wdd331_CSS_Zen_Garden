@@ -3,4 +3,5 @@
 ## Authors
 
 Jordan Dickson
+
 Samuel Witt
