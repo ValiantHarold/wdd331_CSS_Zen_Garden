@@ -1,23 +1,33 @@
-@font-face {
-	font-family: "stone-sans-bold";
-	src: url(../../fonts/stone-sans-bold.ttf) format("truetype");
-}
+// Testing custom fonts
 @font-face {
 	font-family: "Chlorinar-WyWz";
-	src: url(../../fonts/Chlorinar-WyWz.ttf) format("truetype");
+	src: url(../fonts/Chlorinar-WyWz.ttf) format("truetype");
 }
 
-body {
+@font-face {
+	font-family: "Turtle-zOzL";
+	src: url(../fonts/Turtles-zOzL.ttf) format("truetype");
+}
+
+@font-face {
 	font-family: "stone-sans-bold";
+	src: url(../fonts/stone-sans-bold.ttf) format("truetype");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Chlorinar-WyWz";
-	color: green;
-	text-transform: uppercase;
-}
+$fonts-headline: "Turtle-zOzL";
+$fonts-body: "stone-sans-bold";
+
+$turtle-leo: #0190f8;
+$turtle-rap: #f74f01;
+$turtle-mic: #f9a801;
+$turtle-don: #f948f8;
+
+$color1: #6d8700;
+$color2: #9db300;
+$color3: #bac600;
+$color4: #c8d741;
+$color5: #d8e46b;
+$color6: #e2f1a0;
+
+$text-dark: #282824;
+$text-light: #f2fad1;
