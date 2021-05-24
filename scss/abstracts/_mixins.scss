@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+// mixins to take care of repeated patterns.
+@mixin set-font(
+	$size: 1em,
+	$line-height: normal,
+	$font-weight: 500,
+	$font: $fonts-body
+) {
+	font-size: $size;
+	line-height: $line-height;
+	font-weight: $font-weight;
+	font-family: $font;
+}
+
+@mixin set-flex($direction: row, $wrap: wrap) {
+	display: flex;
+	flex-flow: $direction $wrap;
+}
+
+@mixin uppercase($color: $text-dark) {
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $color;
+}
