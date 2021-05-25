@@ -1,12 +1,15 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins';
 
-
 body {
-    @include mixins.set-font($font: $fonts-body);
-    color: $text-light;
+	@include mixins.set-font($font: $fonts-body);
+	color: $white-primary;
 }
 
-h1, h2, h3, h4, h5 {
-    @include mixins.set-font($font: $fonts-headline);
+h1,
+h2,
+h3,
+h4,
+h5 {
+	@include mixins.set-font($font: $fonts-headline);
 }
