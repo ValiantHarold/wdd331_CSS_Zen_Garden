@@ -24,3 +24,23 @@
 	text-transform: uppercase;
 	color: $color;
 }
+
+@mixin set-section($width: 100%, $header-bg: $white-primary) {
+	h3 {
+		text-align: center;
+		background-color: $header-bg;
+		border-radius: 15px 15px 0 0;
+		padding: 20px;
+		
+	}
+	p {
+		padding: 10px 20px 10px 20px;
+	}
+	a {
+		color: $white-secondary;
+	}
+	width: $width;
+	background-color: $white-primary;
+	border-radius: 15px;
+	margin: 20px;
+}

@@ -2,7 +2,7 @@
 
 body {
 	@include set-font($font: $fonts-body);
-	color: $white-primary;
+	color: $color2;
 }
 
 h1,
@@ -10,5 +10,6 @@ h2,
 h3,
 h4,
 h5 {
-	@include set-font($font: $fonts-headline);
+	@include set-font($size: 2em, $font: $fonts-headline);
+	color: $color6;
 }
