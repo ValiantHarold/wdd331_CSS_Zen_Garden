@@ -1,1 +1,5 @@
+@use '../abstracts' as *;
 
+.benefits {
+    @include set-section($width: 30%, $header-bg: $turtle-rap);
+}
