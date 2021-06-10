@@ -1,5 +1,9 @@
 @use '../abstracts' as *;
 
 .explanation {
-    @include set-section($width: 30%, $header-bg: $turtle-leo);
+	@include set-section($width: 30%, $header-bg: $turtle-leo);
+
+	h3::after {
+		content: "So What is This About?";
+	}
 }

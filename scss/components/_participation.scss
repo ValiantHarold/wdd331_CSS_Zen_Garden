@@ -1,6 +1,8 @@
-
 @use '../abstracts' as *;
 
 .participation {
-    @include set-section($width: 30%, $header-bg: $turtle-mic);
+	@include set-section($width: 30%, $header-bg: $turtle-mic);
+	h3::after {
+		content: "Participation";
+	}
 }

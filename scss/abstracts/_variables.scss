@@ -1,12 +1,16 @@
 // Testing custom fonts
 @font-face {
-	font-family: "Chlorinar-WyWz";
-	src: url(../fonts/Chlorinar-WyWz.ttf) format("truetype");
+	font-family: "TMNT-top";
+	src: url(../fonts/TMNT-top.woff2) format("woof2"),
+		url(../fonts/TMNT-top.woof) format("woof"),
+		url(../fonts/TMNT-top.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: "Turtle-zOzL";
-	src: url(../fonts/Turtles-zOzL.ttf) format("truetype");
+	font-family: "TMNT-bot";
+	src: url(../fonts/TMNT-bot.woff2) format("woof2"),
+		url(../fonts/TMNT-bot.woof) format("woof"),
+		url(../fonts/TMNT-bot.ttf) format("truetype");
 }
 
 @font-face {
@@ -14,7 +18,8 @@
 	src: url(../fonts/stone-sans-bold.ttf) format("truetype");
 }
 
-$fonts-headline: "Turtle-zOzL";
+$fonts-top: "TMNT-top";
+$fonts-bot: "TMNT-bot";
 $fonts-body: "stone-sans-bold";
 
 $turtle-leo: #2d8bd2;

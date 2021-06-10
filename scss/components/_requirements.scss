@@ -1,5 +1,8 @@
 @use '../abstracts' as *;
 
 .requirements {
-    @include set-section($width: 30%, $header-bg: $turtle-don);
+	@include set-section($width: 30%, $header-bg: $turtle-don);
+	h3::after {
+		content: "Requirements";
+	}
 }

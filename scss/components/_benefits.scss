@@ -1,5 +1,9 @@
 @use '../abstracts' as *;
 
 .benefits {
-    @include set-section($width: 30%, $header-bg: $turtle-rap);
+	@include set-section($width: 30%, $header-bg: $turtle-rap);
+
+	h3::after {
+		content: "Benefits";
+	}
 }

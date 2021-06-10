@@ -9,7 +9,32 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-	@include set-font($size: 2em, $font: $fonts-headline);
+h5,
+h6 {
+	@include set-font($size: 3rem, $font: $fonts-top);
 	color: $color6;
+	position: relative;
+
+	&::after {
+		@include set-font($size: 3rem, $font: $fonts-bot);
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $color1;
+		z-index: -1;
+	}
+}
+
+h1::after {
+	content: "CSS Zen Garden";
+}
+
+h2::after {
+	content: "The Beauty of CSS Design";
+}
+
+p,
+a,
+li {
+	display: none;
 }
