@@ -25,7 +25,7 @@
 	color: $color;
 }
 
-@mixin set-section($width: 100%, $header-bg: $white-primary) {
+@mixin set-section($header-bg: $white-primary, $desktop-col-start: 2, $desktop-col-end: 7, $desktop-row: 1) {
 	h3 {
 		text-align: center;
 		background-color: $header-bg;
@@ -39,8 +39,15 @@
 	a {
 		color: $white-secondary;
 	}
-	width: $width;
 	background-color: $white-primary;
 	border-radius: 15px;
-	margin: 20px;
+	width: 100%;
+	grid-column: 2/12;
+	margin-top: 50px;
+
+	@media (min-width: 400px) {
+		grid-column: #{$desktop-col-start}/#{$desktop-col-end};
+		grid-row: $desktop-row;
+	}
+	
 }
