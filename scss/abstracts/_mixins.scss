@@ -25,7 +25,7 @@
 	color: $color;
 }
 
-@mixin set-section($header-bg: $white-primary, $desktop-col-start: 2, $desktop-col-end: 7, $desktop-row: 1) {
+@mixin set-section($header-bg: $white-primary, $desktop-col-start: 2, $desktop-col-end: 8, $desktop-row: 1) {
 	h3 {
 		text-align: center;
 		background-color: $header-bg;

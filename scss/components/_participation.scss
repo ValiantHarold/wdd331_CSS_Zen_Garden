@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .participation {
-	@include set-section($header-bg: $turtle-mic, $desktop-col-start: 7, $desktop-col-end: 12, $desktop-row: 2);
+	@include set-section($header-bg: $turtle-mic, $desktop-col-start: 6, $desktop-col-end: 12, $desktop-row: 2);
 	h3::after {
 		content: "Participation";
 	}
