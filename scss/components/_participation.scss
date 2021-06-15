@@ -1,8 +1,21 @@
 @use '../abstracts' as *;
 
 .participation {
-	@include set-section($header-bg: $turtle-mic, $desktop-col-start: 6, $desktop-col-end: 12, $desktop-row: 2);
-	h3::after {
-		content: "Participation";
+	@include set-section(
+		$header-bg: $turtle-mic,
+		$desktop-col-start: 6,
+		$desktop-col-end: 12,
+		$desktop-row: 2
+	);
+
+	h3 {
+		@include set-font($size: 2rem, $font: $fonts-top);
+		color: $color6;
+
+		&::after {
+			@include set-font($size: 2rem, $font: $fonts-bot);
+			color: $color1;
+			content: "Participation";
+		}
 	}
 }

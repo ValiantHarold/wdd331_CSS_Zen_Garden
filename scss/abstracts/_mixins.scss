@@ -25,13 +25,17 @@
 	color: $color;
 }
 
-@mixin set-section($header-bg: $white-primary, $desktop-col-start: 2, $desktop-col-end: 8, $desktop-row: 1) {
+@mixin set-section(
+	$header-bg: $white-primary,
+	$desktop-col-start: 2,
+	$desktop-col-end: 8,
+	$desktop-row: 1
+) {
 	h3 {
-		text-align: center;
+		// text-align: center;
 		background-color: $header-bg;
 		border-radius: 15px 15px 0 0;
-		padding: 20px;
-		
+		// padding: 20px;
 	}
 	p {
 		padding: 10px 20px 10px 20px;
@@ -49,5 +53,4 @@
 		grid-column: #{$desktop-col-start}/#{$desktop-col-end};
 		grid-row: $desktop-row;
 	}
-	
 }

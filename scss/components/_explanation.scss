@@ -2,8 +2,16 @@
 
 .explanation {
 	@include set-section($header-bg: $turtle-leo);
+	// position: relative;
 
-	h3::after {
-		content: "So What is This About?";
+	h3 {
+		@include set-font($size: 2rem, $font: $fonts-top);
+		color: $color6;
+
+		&::after {
+			@include set-font($size: 2rem, $font: $fonts-bot);
+			color: $color1;
+			content: "So What is This About?";
+		}
 	}
 }

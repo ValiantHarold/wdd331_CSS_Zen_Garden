@@ -7,28 +7,39 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-	@include set-font($size: 3rem, $font: $fonts-top);
-	color: $color6;
+h3 {
 	position: relative;
+	z-index: 1;
 
 	&::after {
-		@include set-font($size: 3rem, $font: $fonts-bot);
 		position: absolute;
 		top: 0;
 		left: 0;
-		color: $color1;
+		right: 0;
 		z-index: -1;
 	}
 }
 
-h1::after {
-	content: "CSS Zen Garden";
+h1 {
+	@include set-font($size: 4rem, $font: $fonts-top);
+	color: $color6;
+	text-align: center;
+
+	&::after {
+		@include set-font($size: 4rem, $font: $fonts-bot);
+		color: $color1;
+		content: "CSS Zen Garden";
+		margin: auto;
+	}
 }
 
-h2::after {
-	content: "The Beauty of CSS Design";
+h2 {
+	@include set-font($size: 3rem, $font: $fonts-top);
+	color: $color6;
+
+	&::after {
+		@include set-font($size: 3rem, $font: $fonts-bot);
+		color: $color1;
+		content: "The Beauty of CSS Design";
+	}
 }
