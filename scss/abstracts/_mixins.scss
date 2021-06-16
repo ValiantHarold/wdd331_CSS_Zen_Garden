@@ -54,3 +54,35 @@
 		grid-row: $desktop-row;
 	}
 }
+
+@mixin set-turtle-section(
+	$turtle: 'leo', 
+	$desktop-col-start-img: 1, 
+	$desktop-col-end-img: 4,
+	$desktop-col-start-txt: 5, 
+	$desktop-col-end-txt: 13) {
+		@media (min-width: 800px) {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			h3 {
+				grid-column: 1/13;
+			}
+			p {
+				grid-column: #{$desktop-col-start-txt}/#{$desktop-col-end-txt};
+				&:nth-child(2) {
+					grid-row: 2;
+				}
+			}
+
+			&::after {
+				background-image: url('../../img/#{$turtle}.png');
+				background-size: 300px 300px;
+				display: inline-block;
+				width: 300px; 
+				height: 300px;
+				content:"";
+				grid-column: #{$desktop-col-start-img}/#{$desktop-col-end-img};
+				grid-row: 2/4;
+			}
+		}
+}
