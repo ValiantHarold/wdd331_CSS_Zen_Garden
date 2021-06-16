@@ -1,9 +1,22 @@
 @use '../abstracts' as *;
 
 .requirements {
-	@include set-section($header-bg: $turtle-don, $desktop-col-start: 6, $desktop-col-end: 12, $desktop-row: 4);
-	h3::after {
-		content: "Requirements";
+	@include set-section(
+		$header-bg: $turtle-don,
+		$desktop-col-start: 6,
+		$desktop-col-end: 12,
+		$desktop-row: 4
+	);
+
+	h3 {
+		@include set-font($size: 2rem, $font: $fonts-top);
+		color: $color6;
+
+		&::after {
+			@include set-font($size: 2rem, $font: $fonts-bot);
+			color: $color1;
+			content: "Requirements";
+		}
 	}
 
 	&::after {

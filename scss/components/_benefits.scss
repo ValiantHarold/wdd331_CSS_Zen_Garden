@@ -3,8 +3,15 @@
 .benefits {
 	@include set-section($header-bg: $turtle-rap, $desktop-row: 3);
 
-	h3::after {
-		content: "Benefits";
+	h3 {
+		@include set-font($size: 2rem, $font: $fonts-top);
+		color: $color6;
+
+		&::after {
+			@include set-font($size: 2rem, $font: $fonts-bot);
+			color: $color1;
+			content: "Benefits";
+		}
 	}
 
 	&::after {

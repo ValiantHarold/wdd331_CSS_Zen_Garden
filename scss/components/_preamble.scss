@@ -1,5 +1,14 @@
+@use '../abstracts' as *;
+
 .preamble {
-	h3::after {
-		content: "The Road to Enlightenment";
+	h3 {
+		@include set-font($size: 2rem, $font: $fonts-top);
+		color: $color6;
+
+		&::after {
+			@include set-font($size: 2rem, $font: $fonts-bot);
+			color: $color1;
+			content: "The Road to Enlightenment";
+		}
 	}
 }
