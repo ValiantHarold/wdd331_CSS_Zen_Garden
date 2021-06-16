@@ -6,4 +6,21 @@
 	h3::after {
 		content: "Benefits";
 	}
+
+	&::after {
+		background-image: url('../../img/raph.png');
+		background-size: 200px 200px;
+		display: inline-block;
+		width: 200px; 
+		height: 200px;
+		content:"";
+		grid-column: 4/9;
+	}
+
+	@include set-turtle-section(
+		$turtle: 'raph', 
+		$desktop-col-start-img: 9, 
+		$desktop-col-end-img:12,
+		$desktop-col-start-txt: 1, 
+		$desktop-col-end-txt:9);
 }

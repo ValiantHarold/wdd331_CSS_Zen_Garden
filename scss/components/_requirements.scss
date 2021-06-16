@@ -5,4 +5,17 @@
 	h3::after {
 		content: "Requirements";
 	}
+
+	&::after {
+		background-image: url('../../img/don.png');
+		background-size: 200px 200px;
+		display: inline-block;
+		width: 200px; 
+		height: 200px;
+		content:"";
+		grid-column: 4/9;
+	}
+
+	
+	@include set-turtle-section($turtle: 'don');
 }
