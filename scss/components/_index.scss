@@ -1,4 +1,6 @@
 @forward './viewport';
+@forward './pageWrapper';
+@forward './intro';
 @forward './summary';
 @forward './preamble';
 @forward './explanation';
@@ -6,3 +8,5 @@
 @forward './benefits';
 @forward './requirements';
 @forward './main';
+@forward './sidebar';
+@forward './footer';

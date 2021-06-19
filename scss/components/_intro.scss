@@ -1,0 +1,7 @@
+.intro {
+    @media (min-width: 600px) {
+        grid-row: 1;
+        grid-column: 1/8;
+        padding: 20px;
+    }
+}
