@@ -10,6 +10,7 @@ h2,
 h3 {
 	position: relative;
 	z-index: 1;
+	text-align: center;
 
 	&::after {
 		position: absolute;
@@ -17,6 +18,7 @@ h3 {
 		left: 0;
 		right: 0;
 		z-index: -1;
+		margin: auto;
 	}
 }
 
@@ -34,12 +36,14 @@ h1 {
 }
 
 h2 {
-	@include set-font($size: 3rem, $font: $fonts-top);
+	@include set-font($size: 2rem, $font: $fonts-top);
 	color: $color6;
+	text-align: center;
 
 	&::after {
-		@include set-font($size: 3rem, $font: $fonts-bot);
+		@include set-font($size: 2rem, $font: $fonts-bot);
 		color: $color1;
 		content: "The Beauty of CSS Design";
+		margin: auto;
 	}
 }
