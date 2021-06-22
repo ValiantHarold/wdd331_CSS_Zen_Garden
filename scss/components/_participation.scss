@@ -21,17 +21,6 @@
 		grid-column: 1/13;
 	}
 
-	&::after {
-		background-image: url('../../img/mich.png');
-		background-size: 100px 200px;
-		display: inline-block;
-		width: 100px; 
-		height: 200px;
-		content:"";
-		grid-row: 2;
-		grid-column: 6;
-	}
-
 	@include set-section(
 		$header-bg: $turtle-mic,
 		$desktop-row: 2
