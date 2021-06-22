@@ -28,7 +28,7 @@
 @mixin set-section(
 	$header-bg: $white-primary,
 	$desktop-col-start: 2,
-	$desktop-col-end: 8,
+	$desktop-col-end: 12,
 	$desktop-row: 1
 ) {
 	h3 {
@@ -57,11 +57,11 @@
 
 @mixin set-turtle-section(
 	$turtle: 'leo', 
-	$desktop-col-start-img: 1, 
+	$desktop-col-start-img: 2, 
 	$desktop-col-end-img: 4,
-	$desktop-col-start-txt: 5, 
+	$desktop-col-start-txt: 4, 
 	$desktop-col-end-txt: 13) {
-		@media (min-width: 800px) {
+		@media (min-width:1000px ) {
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
 			h3 {
@@ -73,16 +73,16 @@
 					grid-row: 2;
 				}
 			}
-
 			&::after {
 				background-image: url('../../img/#{$turtle}.png');
-				background-size: 300px 300px;
+				background-size: 150px 300px;
 				display: inline-block;
-				width: 300px; 
+				width: 150px; 
 				height: 300px;
 				content:"";
 				grid-column: #{$desktop-col-start-img}/#{$desktop-col-end-img};
-				grid-row: 2/4;
+				grid-row: 2/5;
 			}
+			
 		}
 }
