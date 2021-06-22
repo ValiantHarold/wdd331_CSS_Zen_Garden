@@ -1,3 +1,15 @@
+@use '../abstracts' as *;
+
 footer {
     grid-row: 5;
+    grid-column: 1/13;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    padding: 30px;
+    
+    a {
+        color: $white-primary;
+    }
 }
