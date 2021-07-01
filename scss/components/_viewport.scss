@@ -1,6 +1,16 @@
+@use '../abstracts/' as *;
 html {
 	background-color: rgb(31, 31, 31);
 }
 body {
 	margin: 1rem;
+}
+
+a {
+	color: $white-secondary;
+	transition: color 1s, font-size 1s;
+	&:hover {
+		color: $color6;
+		font-size: 18px;
+	}
 }
